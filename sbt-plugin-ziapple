@@ -1,0 +1,11 @@
+1. vim $HOME/.sbt/repository
+[repositories]
+  local
+  central: http://maven.aliyun.com/nexus/content/groups/public/
+  typesafe: http://repo.typesafe.com/typesafe/ivy-releases/, [organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext], bootOnly
+  sonatype-oss-releases
+  sonatype-oss-snapshots
+
+2. vim $HOME/.sbt/0.13/plugins/build.sbt
+addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "5.2.4")
+addSbtPlugin("com.github.mpeltonen" % "sbt-idea" % "1.6.0")

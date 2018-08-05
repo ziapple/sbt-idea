@@ -1,8 +1,10 @@
 1. vim $HOME/.sbt/repository
 [repositories]
   local
+  maven-local: /User/hongsite/.m2/repository/
   central: http://maven.aliyun.com/nexus/content/groups/public/
   typesafe: http://repo.typesafe.com/typesafe/ivy-releases/, [organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext], bootOnly
+  centralmvn: http://central.maven.org/maven2/
   sonatype-oss-releases
   sonatype-oss-snapshots
 
